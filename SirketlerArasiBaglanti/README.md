@@ -1,6 +1,3 @@
-# Cisco-Packet-Tracer-Projects
-Burada CCNA bilgilerimi pratiğe döküyor ve yapabildiklerimi sizlere sunuyorum.
-
 # Şirketler Arası LAN ve Yönlendirme Projesi
 
 Bu proje, iki farklı şirkete ait LAN ağlarının yönlendiriciler aracılığıyla birbirine bağlandığı küçük ölçekli bir senaryoyu simüle eder.
