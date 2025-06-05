@@ -1,6 +1,6 @@
-# Şirketler Arası LAN ve Yönlendirme Projesi
+# Şirketler Arası LAN ve Routing Projesi
 
-Bu proje, iki farklı şirkete ait LAN ağlarının yönlendiriciler aracılığıyla birbirine bağlandığı küçük ölçekli bir senaryoyu simüle eder.
+Bu proje, iki farklı şirkete ait LAN ağlarının routerlar aracılığıyla birbirine bağlandığı küçük ölçekli bir senaryoyu simüle eder.
 
 ## 🎯 Amaçlar
 - İki LAN segmenti oluşturmak
