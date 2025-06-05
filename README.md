@@ -13,7 +13,7 @@ Bu proje, iki farklı şirkete ait LAN ağlarının yönlendiriciler aracılığ
 
 ## 🗺️ Topoloji
 
-![Topoloji](Ekran görüntüsü 2025-06-05 184735.png/main)
+![Image](https://github.com/user-attachments/assets/0003fd23-08ba-4693-9a0d-c028073b79fa)
 
 ## 🌐 IP Dağılımı
 
