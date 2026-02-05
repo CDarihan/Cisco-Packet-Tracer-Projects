@@ -22,18 +22,27 @@ Switch üzerindeki her bir fiziksel port, ilgili departmanın VLAN'ına hapsedil
 Bash
 
 # VLAN Tanımlamaları
+
 Switch(config)# vlan 10
+
 Switch(config-vlan)# name Muhasebe
+
 Switch(config)# vlan 20
+
 Switch(config-vlan)# name Insan_Kaynaklari
 
 # Port-VLAN Eşleşmesi (Access Mode)
+
 Switch(config)# interface range f0/1 - 2
+
 Switch(config-if-range)# switchport mode access
+
 Switch(config-if-range)# switchport access vlan 10
 
 Switch(config)# interface range f0/3 - 4
+
 Switch(config-if-range)# switchport mode access
+
 Switch(config-if-range)# switchport access vlan 20
 
 2. Katman 2: IEEE 802.1Q Trunking (Veri Otoyolu)
@@ -42,6 +51,7 @@ Switch ve Router arasındaki hat, tüm VLAN trafiklerinin taşınabilmesi için 
 Bash
 
 Switch(config)# interface gig0/1
+
 Switch(config-if)# switchport mode trunk
 
 3. Katman 3: Router-on-a-Stick (Sub-Interfaces)
@@ -50,15 +60,21 @@ Cisco 2911 Router üzerinde, fiziksel port mantıksal alt arayüzlere bölünere
 Bash
 
 Router(config)# interface gig0/0
+
 Router(config-if)# no shutdown
 
 # Sub-interface Yapılandırması ve Dot1Q Kapsülleme
+
 Router(config-if)# interface gig0/0.10
+
 Router(config-subif)# encapsulation dot1Q 10
+
 Router(config-subif)# ip address 192.168.10.254 255.255.255.0
 
 Router(config-if)# interface gig0/0.20
+
 Router(config-subif)# encapsulation dot1Q 20
+
 Router(config-subif)# ip address 192.168.20.254 255.255.255.0
 
 🧪 Doğrulama ve Test Metodolojisi
