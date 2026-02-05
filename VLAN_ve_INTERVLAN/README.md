@@ -1,3 +1,4 @@
+![Ağ Topolojisi](Görseller/topoloji.png)
 
 🛡️ VLAN Segmentasyonu ve Inter-VLAN Yönlendirme
 
