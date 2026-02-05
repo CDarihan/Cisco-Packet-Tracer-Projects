@@ -2,7 +2,7 @@
 
 🛡️ VLAN Segmentasyonu ve Inter-VLAN Yönlendirme
 
-Bu repository, orta ölçekli bir kurumsal ağ altyapısında ISO/OSI Referans Modeli'nin 2. ve 3. katmanlarında hiyerarşik ve güvenli bir yapının nasıl inşa edileceğini adım adım simüle eder. Projenin temel odağı, siber güvenliğin yapı taşı olan "Ağ Segmentasyonu" (Network Segmentation) mimarisini hayata geçirerek saldırı yüzeyini daraltmaktır.
+Bu proje, orta ölçekli bir kurumsal ağ altyapısında ISO/OSI Referans Modeli'nin 2. ve 3. katmanlarında hiyerarşik ve güvenli bir yapının nasıl inşa edileceğini adım adım simüle eder. Projenin temel odağı, siber güvenliğin yapı taşı olan "Ağ Segmentasyonu" (Network Segmentation) mimarisini hayata geçirerek saldırı yüzeyini daraltmaktır.
 
 🏗️ Proje Mimarisi ve Tasarım Prensipleri
 
