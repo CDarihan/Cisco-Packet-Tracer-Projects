@@ -19,7 +19,6 @@ Proje, kurumsal hiyerarşiye uygun olarak Muhasebe (VLAN 10) ve İnsan Kaynaklar
 1. Katman 2: VLAN Segmentasyonu ve Access Port Yapılandırması
 
 Switch üzerindeki her bir fiziksel port, ilgili departmanın VLAN'ına hapsedilerek switchport mode access komutuyla yapılandırılmıştır. Bu işlem, Layer 2 seviyesinde tam izolasyon sağlar.
-Bash
 
 # VLAN Tanımlamaları
 
@@ -47,8 +46,7 @@ Switch(config-if-range)# switchport access vlan 20
 
 2. Katman 2: IEEE 802.1Q Trunking (Veri Otoyolu)
 
-Switch ve Router arasındaki hat, tüm VLAN trafiklerinin taşınabilmesi için Trunk moda alınmıştır. Paketler bu hat üzerinden geçerken 802.1Q standardına göre etiketlenir (Tagging).
-Bash
+Switch ve Router arasındaki hat, tüm VLAN trafiklerinin taşınabilmesi için Trunk moda alınmıştır. Paketler bu hat üzerinden geçerken 802.1Q standardına göre etiketlenir.
 
 Switch(config)# interface gig0/1
 
@@ -57,7 +55,6 @@ Switch(config-if)# switchport mode trunk
 3. Katman 3: Router-on-a-Stick (Sub-Interfaces)
 
 Cisco 2911 Router üzerinde, fiziksel port mantıksal alt arayüzlere bölünerek her bir VLAN için bir Default Gateway tanımlanmıştır.
-Bash
 
 Router(config)# interface gig0/0
 
